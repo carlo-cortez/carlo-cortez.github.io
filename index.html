@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>My Portfolio</title>
+		<link rel="stylesheet" href="style.css" />
+		<link rel="stylesheet" href="mediaqueries.css" />
+	</head>
+	<body>
+		<nav id="desktop-nav">
+			<div class="logo">Carlo Cortez</div>
+			<div>
+				<ul class="nav-links">
+					<li><a href="#about">About</a></li>
+					<li><a href="#experience">Experience</a></li>
+					<li><a href="#projects">Projects</a></li>
+					<li><a href="#contact">Contact</a></li>
+				</ul>
+			</div>
+		</nav>
+		<nav id="hamburger-nav">
+			<div class="logo">Carlo Cortez</div>
+			<div class="hamburger-menu">
+				<div class="hamburger-icon" onclick="toggleMenu()">
+					<span></span>
+					<span></span>
+					<span></span>
+				</div>
+				<div class="menu-links">
+					<li><a href="#about" onclick="toggleMenu()">About</a></li>
+					<li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+					<li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+					<li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+				</div>
+			</div>
+		</nav>
+		<section id="profile">
+			<div class="section__pic-container">
+				<img src="./assets/memoji.png" alt="Carlo profile picture" />
+			</div>
+			<div class="section__text">
+				<p class="section__text__p1">Hello, I'm</p>
+				<h1 class="title">Carlo Miguel Cortez</h1>
+				<p class="section__text__p2">
+					Backend Developer, Analyst & UX Researcher
+				</p>
+				<div class="btn-container">
+					<button
+						class="btn btn-color-2"
+						onclick="window.open('./assets/resume.pdf')"
+					>
+						Download CV
+					</button>
+					<button class="btn btn-color-1" onclick="location.href='./#contact'">
+						Contact Info
+					</button>
+				</div>
+				<div id="socials-container">
+					<img
+						src="./assets/linkedin.png"
+						alt="My LinkedIn profile"
+						class="icon"
+						onclick="location.href='https://www.linkedin.com/in/carlo-miguel-cortez/'"
+					/>
+					<img
+						src="./assets/github.png"
+						alt="My Github profile"
+						class="icon"
+						onclick="location.href='https://github.com/Cotrii/'"
+					/>
+				</div>
+			</div>
+            <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" alt="Arrow icon" class="icon arrow" onclick="location.href='./#about'"/>
+		</section>
+		<section id="about">
+			<p class="section__text__p1">Get To Know More</p>
+			<h1 class="title">About Me</h1>
+			<div class="section-container">
+				<!-- <div class="section__pic-container">
+					<img
+						src="./assets/about-pic.jpg"
+						alt="Profile picture"
+						class="about-pic"
+					/>
+				</div> -->
+				<div class="about-details-container">
+					<div class="about-containers">
+						<div class="details-container">
+							<img
+								src="./assets/experience.png"
+								alt="Experience icon"
+								class="icon"
+							/>
+							<h3>Experience</h3>
+							<p>4 months <br />Business Analyst Intern</p>
+						</div>
+						<div class="details-container">
+							<img
+								src="./assets/education.png"
+								alt="Experience icon"
+								class="icon"
+							/>
+							<h3>Education</h3>
+							<p>
+								B.Sc. Bachelors Degree <br />
+								Information Systems
+							</p>
+						</div>
+					</div>
+					<div class="text-container">
+						<p>
+							A BS Information Systems Magna Cum Laude Graduate in De La Salle University - Manila 
+							that strives to enhance skills in software development, analytics, and user experience research.
+							Currently, I am trying to read resources on emerging technologies such as Artificial Intelligence, particularly AI Agent Ecosystems.
+						</p>
+					</div>
+				</div>
+			</div>
+			<img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" alt="Arrow icon" class="icon arrow" onclick="location.href='./#experience'"/>
+		</section>
+		<section id="experience">
+			<p class="section__text__p1">Explore My</p>
+			<h1 class="title">Experience</h1>
+			<div class="experience-details-container">
+				<div class="about-containers">
+					<div class="details-container">
+						<h2 class="experience-sub-title">Languages & Frameworks</h2>
+						<div class="article-container">
+							<article>
+								<img
+									src="./assets/checkmark.png"
+									alt="Experience"
+									class="icon"
+								/>
+								<div>
+									<h3>C Lang</h3>
+								</div>
+							</article>
+                            <article>
+								<img
+									src="./assets/checkmark.png"
+									alt="Experience"
+									class="icon"
+								/>
+								<div>
+									<h3>Java</h3>
+								</div>
+							</article>
+                            <article>
+								<img
+									src="./assets/checkmark.png"
+									alt="Experience"
+									class="icon"
+								/>
+								<div>
+									<h3>Python</h3>
+								</div>
+							</article>
+                            <article>
+								<img
+									src="./assets/checkmark.png"
+									alt="Experience"
+									class="icon"
+								/>
+								<div>
+									<h3>Kotlin</h3>
+								</div>
+							</article>
+							<article>
+								<img
+									src="./assets/checkmark.png"
+									alt="Experience"
+									class="icon"
+								/>
+								<div>
+									<h3>React</h3>
+								</div>
+							</article>
+							<article>
+								<img
+									src="./assets/checkmark.png"
+									alt="Experience"
+									class="icon"
+								/>
+								<div>
+									<h3>JavaScript</h3>
+								</div>
+							</article>
+						</div>
+					</div>
+					<div class="details-container">
+						<h2 class="experience-sub-title">Development Tools</h2>
+						<div class="article-container">
+							<article>
+								<img
+									src="./assets/checkmark.png"
+									alt="Experience"
+									class="icon"
+								/>
+								<div>
+									<h3>MySQL</h3>
+								</div>
+							</article>
+                            <article>
+								<img
+									src="./assets/checkmark.png"
+									alt="Experience"
+									class="icon"
+								/>
+								<div>
+									<h3>MongoDB</h3>
+								</div>
+							</article>
+                            <article>
+								<img
+									src="./assets/checkmark.png"
+									alt="Experience"
+									class="icon"
+								/>
+								<div>
+									<h3>Firebase</h3>
+								</div>
+							</article>
+                            <article>
+								<img
+									src="./assets/checkmark.png"
+									alt="Experience"
+									class="icon"
+								/>
+								<div>
+									<h3>Github</h3>
+								</div>
+							</article>
+							<article>
+								<img
+									src="./assets/checkmark.png"
+									alt="Experience"
+									class="icon"
+								/>
+								<div>
+									<h3>Linux CLI</h3>
+								</div>
+							</article>
+							<article>
+								<img
+									src="./assets/checkmark.png"
+									alt="Experience"
+									class="icon"
+								/>
+								<div>
+									<h3>PostgreSQL</h3>
+								</div>
+							</article>
+						</div>
+					</div>
+					<div class="details-container">
+						<h2 class="experience-sub-title">Other Tools</h2>
+						<div class="article-container">
+							<article>
+								<img
+									src="./assets/checkmark.png"
+									alt="Experience"
+									class="icon"
+								/>
+								<div>
+									<h3>Canva</h3>
+								</div>
+							</article>
+                            <article>
+								<img
+									src="./assets/checkmark.png"
+									alt="Experience"
+									class="icon"
+								/>
+								<div>
+									<h3>Figma</h3>
+								</div>
+							</article>
+                            <article>
+								<img
+									src="./assets/checkmark.png"
+									alt="Experience"
+									class="icon"
+								/>
+								<div>
+									<h3>Jira</h3>
+								</div>
+							</article>
+                            <article>
+								<img
+									src="./assets/checkmark.png"
+									alt="Experience"
+									class="icon"
+								/>
+								<div>
+									<h3>Excel</h3>
+								</div>
+							</article>
+							<article>
+								<img
+									src="./assets/checkmark.png"
+									alt="Experience"
+									class="icon"
+								/>
+								<div>
+									<h3>PowerBI</h3>
+								</div>
+							</article>
+							<article>
+								<img
+									src="./assets/checkmark.png"
+									alt="Experience"
+									class="icon"
+								/>
+								<div>
+									<h3>Confluence</h3>
+								</div>
+							</article>
+						</div>
+					</div>
+				</div>
+			</div>
+            <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" alt="Arrow icon" class="icon arrow" onclick="location.href='./#projects'"/>
+		</section>
+        <section id="projects">
+            <p class="section__text__p1">Browse My Recent</p>
+            <h1 class="title">Dev Projects</h1>
+            <div class="experience-details-container">
+                <div class="about-containers">
+                    <div class="details-container color-container">
+                        <div class="article-container">
+                            <img src="./assets/project-1.png"
+                                alt="Project 1"
+                                class="project-img"
+                            />
+                        </div>
+                        <h2 class="experience-sub-title project-title">HiSight: CHED OBE Continuous Quality Improvement System </h2>
+                        <div class="btn-container">
+                            <button 
+                                class="btn btn-color-2 project-btn"
+                                onclick="location.href='https://www.dlsu.edu.ph//wp-content/uploads/pdf/conferences/research-congress-proceedings/2024/TPH-09.pdf'"
+                            >
+                                Paper
+                            </button>
+                        </div>
+                    </div>
+                    <div class="details-container color-container">
+                        <div class="article-container">
+                            <img src="./assets/project-2.png"
+                                alt="Project 2"
+                                class="project-img"
+                            />
+                        </div>
+                        <h2 class="experience-sub-title project-title">ePawn: Pawnshop Management System for R Raymundo Pawnshop</h2>
+                        <div class="btn-container">
+                            <button 
+                                class="btn btn-color-2 project-btn" 
+                                onclick="location.href='https://github.com/Hideki-Kawachi/epawn'">
+                                GitHub
+                            </button>
+                        </div>
+                    </div>
+                    <div class="details-container color-container">
+                        <div class="article-container">
+                            <img src="./assets/project-3.png"
+                                alt="Project 3"
+                                class="project-img"
+                            />
+                        </div>
+                        <h2 class="experience-sub-title project-title">The Gunpla Finds: Kotlin Social Media App for Gunpla Enthusiasts</h2>
+                        <div class="btn-container">
+                            <button 
+                                class="btn btn-color-2 project-btn" 
+                                onclick="location.href='https://github.com/Cotrii/Gunpla-Machine-Project'">
+                                GitHub
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+			<h1 class="title">UI/UX Projects</h1>
+			<div class="experience-details-container">
+                <div class="about-containers">
+                    <div class="details-container color-container">
+                        <div class="article-container">
+                            <img src="./assets/project-4.png"
+                                alt="Project 1"
+                                class="project-img"
+                            />
+                        </div>
+                        <h2 class="experience-sub-title project-title">Kashya - HCI Course Prototype</h2>
+                        <div class="btn-container">
+                            <button 
+                                class="btn btn-color-2 project-btn"
+                                onclick="location.href='https://www.figma.com/proto/LiE7YJKPNb9yz9YrprbiCs/Kashya?type=design&node-id=145-11743&scaling=min-zoom&page-id=128%3A5079&starting-point-node-id=145%3A11743'"
+                            >
+                                Figma
+                            </button>
+                        </div>
+                    </div>
+                    <div class="details-container color-container">
+                        <div class="article-container">
+                            <img src="./assets/project-5.png"
+                                alt="Project 2"
+                                class="project-img"
+                            />
+                        </div>
+                        <h2 class="experience-sub-title project-title">Fastclepius - Innovation Course Prototype</h2>
+                        <div class="btn-container">
+                            <button 
+                                class="btn btn-color-2 project-btn" 
+                                onclick="location.href='https://www.figma.com/proto/nircdCBSgodetHbX7URJNg/%5BCCINOV8%5D-MVP?node-id=53-2179&starting-point-node-id=13%3A27'">
+                                Figma
+                            </button>
+                        </div>
+                    </div>
+                    <div class="details-container color-container">
+                        <div class="article-container">
+                            <img src="./assets/project-6.png"
+                                alt="Project 3"
+                                class="project-img"
+                            />
+                        </div>
+                        <h2 class="experience-sub-title project-title">EcoKarga and Scrappie AI - A Design Thinking Project</h2>
+                        <div class="btn-container">
+                            <button 
+                                class="btn btn-color-2 project-btn" 
+                                onclick="location.href='https://www.figma.com/proto/VaLS0EI8VYEYDHw6zvlY01/ISDESTH-Prototype?node-id=259-1938&t=q9G5pKhjYtHuDSfU-1&scaling=scale-down&content-scaling=fixed&page-id=259%3A835&starting-point-node-id=259%3A836'">
+                                Figma 1
+                            </button>
+							<button 
+							class="btn btn-color-2 project-btn" 
+							onclick="location.href='https://www.figma.com/proto/VaLS0EI8VYEYDHw6zvlY01/ISDESTH-Prototype?node-id=301-1369&t=mrTr2AR09z5ANWoT-1&scaling=scale-down&content-scaling=fixed&page-id=294%3A2110&starting-point-node-id=299%3A1351'">
+								Figma 2
+						</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" alt="Arrow icon" class="icon arrow" onclick="location.href='./#contact'"/>
+        </section>
+        <section id="contact">
+            <p class="section__text__p1">Get in Touch</p>
+            <h1 class="title">Contact Me</h1>
+            <div class="contact-info-upper-container">
+                <div class="contact-info-container">
+                    <img 
+                        src="./assets/email.png"
+                        alt="Email Icon"
+                        class="icon contact-icon email-icon"
+                    />
+                    <p><a href="mailto:carlomiguelcortez@gmail.com">carlomiguelcortez@gmail.com</p>
+                </div>
+                <div class="contact-info-container">
+                    <img 
+                        src="./assets/linkedin.png"
+                        alt="LinkedIn Icon"
+                        class="icon contact-icon"
+                    />
+                    <p><a href="https://www.linkedin.com/in/carlo-miguel-cortez/">LinkedIn</p>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <nav>
+				<div class="logo">Carlo Cortez</div>
+                <div class="nav-links-container">
+                    <ul class="nav-links">
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#experience">Experience</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <p>Copyright &#169; 2025. All Rights Reserved</p>
+        </footer>
+		<script src="script.js"></script>
+	</body>
+</html>
